@@ -1,8 +1,6 @@
 # Scottie
 
-型制約付きのaccessorを作成するgemです。
-
-type_constraintsを使用します。
+Adds accessors (using type_constraints) to your class.
 
 ## Synopsis
 
