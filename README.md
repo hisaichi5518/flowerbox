@@ -1,6 +1,39 @@
 # Flowerbox
 
-TODO: Write a gem description
+型制約付きのaccessorを作成するgemです。
+
+type_constraintsを使用します。
+
+## Synopsis
+
+```ruby
+require 'flowerbox'
+require 'type_constraints'
+
+TypeConstraints.setup do
+  subtype :NotNgWord, :String do
+    constraint -> v { v !~ /悪/ }
+  end
+end
+
+class Person
+  has :name, :NotNgWord
+  has :twitter_acount, :String
+end
+
+# ok
+person = Person.new
+person.name = "ひさいち"
+person.twitter_acount = "hisaichi5518"
+
+# throw exception
+# person.name = "悪魔ちゃん"
+# person.twitter_acount = :hisaichi5518
+
+# ok
+p person.name #=> "ひさいち"
+p person.twitter_acount #=> "hisaichi5518"
+```
 
 ## Installation
 
@@ -18,13 +51,13 @@ Or install it yourself as:
 
     $ gem install flowerbox
 
-## Usage
+## See also
 
-TODO: Write usage instructions here
+- [type_constraints](https://github.com/hisaichi5518/type_constraints/)
 
 ## Contributing
 
-1. Fork it ( https://github.com/[my-github-username]/flowerbox/fork )
+1. Fork it ( https://github.com/hisaichi5518/flowerbox/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
