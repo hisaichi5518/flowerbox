@@ -1,4 +1,4 @@
-# Flowerbox
+# Scottie
 
 型制約付きのaccessorを作成するgemです。
 
@@ -7,7 +7,7 @@ type_constraintsを使用します。
 ## Synopsis
 
 ```ruby
-require 'flowerbox'
+require 'scottie'
 require 'type_constraints'
 
 TypeConstraints.setup do
@@ -39,7 +39,7 @@ p person.twitter_acount #=> "hisaichi5518"
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'flowerbox'
+gem 'scottie'
 ```
 
 And then execute:
@@ -48,7 +48,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install flowerbox
+    $ gem install scottie
 
 ## See also
 
@@ -56,7 +56,7 @@ Or install it yourself as:
 
 ## Contributing
 
-1. Fork it ( https://github.com/hisaichi5518/flowerbox/fork )
+1. Fork it ( https://github.com/hisaichi5518/scottie/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

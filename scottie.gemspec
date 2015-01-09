@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'flowerbox/version'
+require 'scottie/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "flowerbox"
-  spec.version       = Flowerbox::VERSION
+  spec.name          = "scottie"
+  spec.version       = Scottie::VERSION
   spec.authors       = ["hisaichi5518"]
   spec.email         = ["hisaichi5518@gmail.com"]
   spec.summary       = %q{Adds accessors (using type_constraints) to your class.}

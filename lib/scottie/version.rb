@@ -1,3 +1,3 @@
-module Flowerbox
+module Scottie
   VERSION = "0.0.1"
 end

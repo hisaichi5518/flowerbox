@@ -1,16 +1,16 @@
 require 'spec_helper'
 
-class FlowerboxTest
+class ScottieTest
   has test: :String, hoge: :Fixnum
 end
 
-describe Flowerbox do
+describe Scottie do
   it 'has a version number' do
-    expect(Flowerbox::VERSION).not_to be nil
+    expect(Scottie::VERSION).not_to be nil
   end
 
   it 'does something useful' do
-    t = FlowerboxTest.new
+    t = ScottieTest.new
     t.test = "test"
     expect(t.test).to eq "test"
     expect { t.test = 1000 }.to raise_error TypeConstraints::Exceptions::Invalid
