@@ -1,5 +1,5 @@
 require "flowerbox/version"
+require "flowerbox/core_ext/module"
 
 module Flowerbox
-  # Your code goes here...
 end

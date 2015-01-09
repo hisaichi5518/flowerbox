@@ -17,8 +17,7 @@ TypeConstraints.setup do
 end
 
 class Person
-  has :name, :NotNgWord
-  has :twitter_acount, :String
+  has name: :NotNgWord, twitter_acount: :String
 end
 
 # ok
