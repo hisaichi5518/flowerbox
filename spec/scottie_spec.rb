@@ -13,10 +13,10 @@ describe Scottie do
     t = ScottieTest.new
     t.test = "test"
     expect(t.test).to eq "test"
-    expect { t.test = 1000 }.to raise_error TypeConstraints::Exceptions::Invalid
+    expect { t.test = 1000 }.to raise_error TypeConstraints::InvalidError
 
     t.hoge = 100
     expect(t.hoge).to eq 100
-    expect { t.hoge = "hoge" }.to raise_error TypeConstraints::Exceptions::Invalid
+    expect { t.hoge = "hoge" }.to raise_error TypeConstraints::InvalidError
   end
 end
