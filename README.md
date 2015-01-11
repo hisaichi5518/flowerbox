@@ -1,6 +1,8 @@
 # Scottie
 
-Adds accessors (using type_constraints) to your class.
+Adds accessors (using type_constraints) to Module class.
+
+[![Build Status](https://travis-ci.org/hisaichi5518/scottie.svg)](https://travis-ci.org/hisaichi5518/scottie)
 
 ## Synopsis
 
